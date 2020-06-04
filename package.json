@@ -1,0 +1,15 @@
+{
+  "name": "pract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "june.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon 04_06"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
