@@ -56,4 +56,64 @@
  *
  ********/
 
- // Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more.
+// Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more.
+// function foo(str) {
+//   let strLength = str.length;
+//   if (strLength >= 3) {
+//     let lstThree = str.substring(strLength - 3);
+//     let newStr = lstThree + str + lstThree;
+//     return newStr;
+//   } else {
+//     return false;
+//   }
+// }
+
+// const res = foo("rajat");
+// console.log(res);
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+// Write a JavaScript program to check whether a string starts with 'Java' and false otherwise
+// function foo(str) {
+//   let inputStr = str.toLowerCase();
+//   let frtwrds = inputStr.substring(0, 4);
+
+//   if (frtwrds === "java") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// const res = foo("javaram");
+// console.log(res);
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+// Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range.
+
+// function foo(num1, num2) {
+//   if (num1 >= 50 && num1 <= 80||num2 >= 50 && num2 <= 80) {
+//     return true;
+//   }else{
+//       return false
+//   }
+// }
+
+// const res = foo(52, 80);
+// console.log(res);
+
+// Write a JavaScript program to check whether a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one.
+
+// function foo(str) {
+//   let inputStr = str.toLowerCase();
+//   let middlewrds = inputStr.substring(4, 10);
+
+//   if (middlewrds === "script") {
+//     let part1 = inputStr.substring(0, 4);
+//     let part2 = inputStr.substring(10, str.length);
+//     return part1 + part2;
+//   } else {
+//     return str;
+//   }
+// }
+// const res = foo("JavaScript");
+// console.log(res);
