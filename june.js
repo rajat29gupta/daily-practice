@@ -117,3 +117,83 @@
 // }
 // const res = foo("JavaScript");
 // console.log(res);
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 08 June *
+ *
+ ********/
+
+//  Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.  Go to the editor
+
+// function foo(a, b) {
+//   if (a != b) {
+//     let val1 = Math.abs(100 - a);
+//     let val2 = Math.abs(100 - b);
+
+//     if (val1 > val2) {
+//       return b;
+//     }
+//     if (val2 > val1) {
+//       return a;
+//     }
+//     return 0;
+//   } else {
+//     return false;
+//   }
+// }
+
+// const res = foo(95, 95);
+// console.log(res);
+
+// Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
+// function foo(x, y) {
+//   if (x >= 40 && x <= 60 && y >= 40 && y <= 60) {
+//     if (x == y) {
+//       return "Number are same";
+//     } else if (x < y) {
+//       return y;
+//     } else {
+//       return x;
+//     }
+//   }else{
+//       return 'Number not in range'
+//   }
+// }
+
+// const res = foo(45, 60);
+// console.log(res);
+
+// Write a program to check whether a specified character exists within the 2nd to 4th position in a given string.
+
+// function foo(str, chr) {
+//   let charA = str.charAt(1);
+//   let charB = str.charAt(3);
+//   if (charA === charB) {
+//     if (chr === charA) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+//   console.log(charA);
+// }
+
+// const res = foo("javascript", "a");
+// console.log(res);
+
+// Write a JavaScript program to check whether the last digit of the three given positive integers is same.
+// function foo(a, b, c) {
+//   let x = a % 10;
+//   let y = b % 10;
+//   let z = c % 10;
+//   if (x === y && y === z && z === x) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// const res = foo(44, 54, 64);
+// console.log(res);
