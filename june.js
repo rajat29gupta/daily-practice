@@ -197,3 +197,162 @@
 
 // const res = foo(44, 54, 64);
 // console.log(res);
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 09 June *
+ *
+ ********/
+
+// Write a JavaScript program to create new string with first 3 characters are in lower case from a given string.
+// If the string length is less than 3 convert all the characters in upper case.
+
+// function foo(str) {
+//   strLength = str.length;
+//   if (strLength < 3) {
+//     return str.toUpperCase();
+//   }
+//   const strPre = str.substring(0, 3).toLowerCase();
+//   const strPost = str.substring(3);
+//   return strPre + strPost;
+// }
+
+// console.log(foo("Python"));
+// console.log(foo("Py"));
+// console.log(foo("JAVAScript"));
+
+// Write a JavaScript program to compute the sum of the two given integers,
+// If the sum is in the range 50..80 return 65 other wise return 80.
+
+// function foo(x, y) {
+//   const res = x + y;
+//   if (res >= 50 && res <= 80) {
+//     return 65;
+//   } else {
+//     return 80;
+//   }
+// }
+
+// console.log(foo(10, 10));
+
+// Write a JavaScript program to check from two given integers whether one of them is 8 or
+//  their sum or difference is 8.
+// function foo(x, y) {
+//   if (x == 8 || y == 8 || x + y == 8 || Math.abs(x - y) == 8) {
+//     return true;
+//   }
+//   return false;
+// }
+// console.log(foo(7, 8));
+// console.log(foo(16, 8));
+// console.log(foo(24, 32));
+// console.log(foo(17, 18));
+
+// Write a JavaScript program to check three given numbers, if the three numbers are same return 30 otherwise return 20
+// and if two numbers are same return 40.
+// function foo(x, y, z) {
+//   if (x == y && y == z && z == x) {
+//     return 30;
+//   } else if (x == y || z == x || y == z) {
+//     return 40;
+//   } else {
+//     return 20;
+//   }
+// }
+
+// console.log(foo(8, 8, 8));
+// console.log(foo(8, 8, 18));
+// console.log(foo(8, 7, 18));
+
+// Write a JavaScript program to check from three given numbers (non negative integers) that two or
+// all of them have the same rightmost digit.
+
+// function foo(x, y, z) {
+//   if (x < 0 || y < 0 || z < 0) {
+//     return false;
+//   }
+//   const baseX = x % 10;
+//   const baseY = y % 10;
+//   const baseZ = z % 10;
+//   if (baseX == baseY || baseY == baseZ || baseX == baseZ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(foo(-22,32,42));
+// console.log(foo(102,302,2));
+// console.log(foo(20,22,45));
+
+// Write a JavaScript program to check two given non-negative integers that whether one of the number (not both) is multiple of 7 or 11
+
+// function foo(a, b) {
+//   if (!((a % 7 == 0 || a % 11 == 0) && (b % 7 == 0 || b % 11 == 0))) {
+//     return a % 7 == 0 || a % 11 == 0 || b % 7 == 0 || b % 11 == 0;
+//   } else return false;
+// }
+// console.log(foo(35, 35));
+
+// Write a JavaScript program to reverse a given string
+// function foo(str) {
+//   return str.split('').reverse().join('');
+// }
+// console.log(foo("rajat"));
+
+// Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
+
+// function foo(str) {
+//   return str.replace(/[a-zA-Z]/g, function (x) {
+//     return String.fromCharCode(x.charCodeAt(0) + 1);
+//   });
+// }
+// console.log(foo("rajat"));
+
+//  Write a JavaScript program to capitalize the first letter of each word of a given string.
+// function foo(str) {
+//   return strSplit = str.toLowerCase().split(" ").map(a=>a.charAt(0).toUpperCase() + a.substring(1)).join(' ');
+// }
+// console.log(foo('Write a JavaScript program to capitalize the first letter of each word of a given string.'));
+
+// Write a JavaScript program to convert a given number to hours and minutes.
+// function foo(str) {
+//   let a = Math.floor(str / 60);
+//   let b = str % 60;
+//   return a + ":" + b;
+// }
+
+// console.log(foo(800));
+
+// Write a JavaScript program to convert the letters of a given string in alphabetical order
+
+// function foo(str){
+//     return str.split('').sort().join('');
+// }
+// console.log(foo('rajat'));
+
+// Write a JavaScript program to check whether the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
+// function foo(str){
+//       return (/a...b/).test(str) || (/b...a/).test(str);
+// }
+// console.log(foo('Chainsbreak'));
+// console.log(foo("pane borrowed"));
+// console.log(foo("abCheck"));
+
+// Write a JavaScript program to count the number of vowels in a given string.
+// function vowels(str) {
+//   vowels = ["a", "e", "i", "o", "u"];
+//   str = str.split("");
+//   contador = 0;
+//   str.forEach(function (vowel) {
+//     if (vowels.includes(vowel)) {
+//       contador++;
+//     }
+//   });
+//   return contador;
+// }
+// console.log(vowels('rajat'));
+
+
+
