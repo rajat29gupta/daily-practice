@@ -354,5 +354,200 @@
 // }
 // console.log(vowels('rajat'));
 
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 10 June *
+ *
+ ********/
+
+// Write a JavaScript program to check whether a given string contains equal number of p's and t's.
+
+// function foo(str) {
+//   let st = str.split("");
+//   let pcount = 0;
+//   let tcount = 0;
+//   let pt = "p";
+//   let tt = "t";
+//   st.forEach((element) => {
+//     if (pt.includes(element)) {
+//       pcount++;
+//     }
+//     if (tt.includes(element)) {
+//       tcount++;
+//     }
+//   });
+
+//   if (pcount == tcount) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(foo("pppptt"));
+
+// Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.
+
+// function newFunction(a, b) {
+//   return Math.floor(a / b)
+//     .toString()
+//     .split("")
+//     .join(", ");
+// }
+
+// console.log(newFunction(26, 2));
+// console.log(newFunction(27, 2));
+// console.log(newFunction(2560, 8));
+
+// Write a JavaScript program to create a new string of specified copies (positive number) of a given string
+
+// function foo(str, n) {
+//   if (n <= 0) {
+//     return false;
+//   }
+//   return str.repeat(n);
+// }
+
+// console.log(foo("rajat", 5));
+
+// Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string.
+// The length of the given string must be 3 and above
+
+// function foo(str) {
+//   if (str.length >= 3) {
+//     let lstThree = str.substring(str.length - 3);
+//     console.log(lstThree);
+//     return lstThree.repeat(4);
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(foo("rajat"));
+
+// Write a JavaScript program to extract the first half of a string of even length. .
+
+// function foo(str) {
+//   if (str.length % 2 == 0) {
+//     return str.substring(0, str.length / 2);
+//   }
+//   return str;
+// }
+// console.log(foo("javascript"));
+
+// Write a JavaScript program to create a new string without the first and last character of a given string.
+
+// function foo(str) {
+//   return str.substring(1, str.length - 1);
+// }
+
+// console.log(foo("rajat"));
+
+// Write a JavaScript program to concatenate two strings except their first character.
+
+// function foo(str1, str2) {
+//   let strA = str1.substring(1);
+//   let strB = str2.substring(1);
+//   return strA.concat(strB)
+// }
+
+// console.log(foo("rajat", "gupta"));
+
+// Write a JavaScript program to move last three character to the start of a given string. The string length must be greater or equal to three.
+
+// function foo(str) {
+//   if (str.length >= 3) {
+//     let lstThree = str.slice(str.length - 3);
+//     return lstThree + str.substring(0, 3);
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(foo("rajat"));
+
+// Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater or equal to three
+
+// function foo(str) {
+//   if (str % 2 != 0) {
+//     let middle = (str.length + 1) / 2;
+//     console.log(str[middle]);
+//     return str.substring(middle - 2, middle + 1);
+//   }
+//   return str;
+// }
+// console.log(foo("rajat"));
+
+// Write a JavaScript program to concatenate two strings and return the result.
+//  If the length of the strings are not same then remove the characters from the longer string.
+
+// function foo(str, str1) {
+//   //   if (str.length == str1.length) {
+//   //     return str + str1;
+//   //   } else if (str.length > str1.length) {
+//   //     return str.substring(0, str1.length) + str1;
+//   //   } else {
+//   //     return str + str1.substring(0, str.length);
+//   //   }
+//   // }
+
+//   const m = Math.min(str.length, str1.length);
+//   console.log(m);
+//   return str.substring(str.length - m) + str1.substring(str1.length - m);
+// }
+
+// console.log(foo("rajatsss", "gupta"));
+
+// Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
+
+// function foo(str) {
+//   let str1 = str.toLowerCase();
+//   if (
+//     (str1.length >= 3 && str1.substring(0, 3) == "new") ||
+//     str1.substring(0, 3) == "los"
+//   ) {
+//     return str;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(foo("New York"));
+// console.log(foo("Los Angeles"));
+// console.log(foo("London"))
+
+// Write a JavaScript program to create a new string from a given string,
+//  removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied
+
+// function foo(str) {
+//   str = str.toLowerCase();
+//   if (str.startsWith("p") && str.endsWith("p")) {
+//     return str.substring(1, str.length - 1);
+//   }
+// }
+
+// console.log(foo("pythonp"));
+// console.log(foo("Pythonp"));
+// console.log(foo("PythonP"));
 
 
+// Write a JavaScript program to create a new string using the first and last n characters from a given sting.
+//  The string length must be greater or equal to n. 
+
+// function foo(str,no){
+//     let frst=str.substring(0,no)
+//     let lst=str.substring(str.length-no,str.length)
+//     return frst+lst
+    
+
+// }
+// console.log(foo("rajsdadadat",3));
+
+
+// Write a JavaScript program to rotate the elements left of a given array of integers of length 3.
+// function rotate_elements_left(array)
+// {
+//     return [array[1], array[2], array[0]];
+// }
+// console.log(rotate_elements_left([3, 4, 5]));  
+// console.log(rotate_elements_left([0, -1, 2]));  
+// console.log(rotate_elements_left([7, 6, 5])); 
