@@ -529,25 +529,207 @@
 // console.log(foo("Pythonp"));
 // console.log(foo("PythonP"));
 
-
 // Write a JavaScript program to create a new string using the first and last n characters from a given sting.
-//  The string length must be greater or equal to n. 
+//  The string length must be greater or equal to n.
 
 // function foo(str,no){
 //     let frst=str.substring(0,no)
 //     let lst=str.substring(str.length-no,str.length)
 //     return frst+lst
-    
 
 // }
 // console.log(foo("rajsdadadat",3));
-
 
 // Write a JavaScript program to rotate the elements left of a given array of integers of length 3.
 // function rotate_elements_left(array)
 // {
 //     return [array[1], array[2], array[0]];
 // }
-// console.log(rotate_elements_left([3, 4, 5]));  
-// console.log(rotate_elements_left([0, -1, 2]));  
-// console.log(rotate_elements_left([7, 6, 5])); 
+// console.log(rotate_elements_left([3, 4, 5]));
+// console.log(rotate_elements_left([0, -1, 2]));
+// console.log(rotate_elements_left([7, 6, 5]));
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 11 June *
+ *
+ ********/
+
+// Write a JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1.
+
+// function foo(num) {
+//   let lst = num.length - 1;
+//   if (num[0] == 1 || num[lst] == 1) {
+//     return true;
+//   }
+//   return false;
+// }
+// const arr = [3, 2, 1];
+// console.log(foo(arr));
+
+// Write a JavaScript program to check whether the first and last elements are equal of a given array of integers length 3
+
+// function foo(num) {
+//   let lst = num.length - 1;
+//   if (num[0] == num[lst]) {
+//     return true;
+//   }
+//   return false;
+// }
+// const arr = [1, 2, 1];
+// console.log(foo(arr));
+
+// Write a JavaScript program to reverse the elements of a given array of integers length 3
+
+// function foo(num) {
+//   return arr.length >= 3 ? num.reverse() : arr;
+// }
+// const arr = [5, 1, 2, 3];
+// console.log(foo(arr));
+
+// Write a JavaScript program to find the larger value between the first or last and set all the other elements with that value. Display the new array
+
+// function foo(num) {
+//   const maxNum = Math.max(...num);
+//   return num.map((a) => (a = maxNum));
+// }
+// const arr = [20, 30, 40];
+// console.log(foo(arr));
+
+// Write a JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3.
+// function foo(arrA, arrB) {
+//   const newAr = [];
+//   newAr.push(arrA[1]);
+//   newAr.push(arrB[1]);
+//   return newAr;
+// }
+
+// const arrA = [20, 30, 40];
+// const arrB = [30, 40, 50];
+// console.log(foo(arrA, arrB));
+
+// Write a JavaScript program to test whether an array of integers of length 2 contains 1 or a 3.
+
+// let foo = (num) => num.includes(1) || num.includes(3);
+// const arr = [2, 1, 4];
+// console.log(foo(arr));
+
+// Write a JavaScript program to test whether an array of integers of length 2 does not contain 1 or a 3
+// let foo = (num) => !(num.includes(1) || num.includes(3));
+// const arr = [2, 2, 4];
+// console.log(foo(arr));
+
+// Write a JavaScript program to test whether a given array of integers contains 30 and 40 twice.
+// The array length should be 0, 1, or 2.
+// function checkDoubleElem(arr) {
+//   let condition = [30, 40];
+//   let count = 0;
+
+//   for (let cond of condition) {
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr.includes(cond)) count++;
+//     }
+//   }
+
+//   return count > 1;
+// }
+// console.log(checkDoubleElem([30, 20, 60, 25, 30]));
+
+// Write a JavaScript program to swap the first and last elements of a given array of integers.
+// The array length should be at least 1
+
+// const foo = (arr) => {
+//   [arr[0], arr[arr.length - 1]] = [arr[arr.length - 1], arr[0]];
+//   return arr;
+// };
+// const arr = [20, 40, 50];
+// console.log(foo(arr));
+
+// Write a JavaScript program to add two digits of a given positive integer of length two.
+
+// function foo(num) {
+//   let a = num % 10;
+//   let b = Math.floor(num / 10);
+//   console.log(a + b);
+// }
+
+// console.log(foo(25));
+
+// Write a JavaScript to add two positive integers without carry.
+// function sumNumbers(a, b) {
+//   return (a + b) % 1000;
+// }
+// console.log(sumNumbers(222, 911));
+
+// Write a JavaScript to find the longest string from a given array of strings.
+
+// let foo = (strarr) => {
+//   let maxLength = Math.max(...strarr.map((max) => max.length));
+//   return strarr.filter((a) => a.length == maxLength);
+// };
+// const str = ["a", "aa", "aaa", "aaaaa", "aaaa"];
+// console.log(foo(str));
+
+// Write a JavaScript to replace each character of a given string by the next one in the English alphabet.  Go to the editor
+// Note: 'a' will be replace by 'b' or 'z' would be replaced by 'a'.
+
+// function alphabet_char_Shift(str) {
+//   const all_chars = str.split("");
+//   for (let i = 0; i < all_chars.length; i++) {
+//     let n = all_chars[i].charCodeAt() - "a".charCodeAt();
+//     n = (n + 1) % 26;
+//     all_chars[i] = String.fromCharCode(n + "a".charCodeAt());
+//   }
+//   return all_chars.join("");
+// }
+
+// console.log(alphabet_char_Shift("abcdxyz"));
+
+// Write a JavaScript code to divide a given array of positive integers into two parts.
+// First element goes to first part, second element goes to second part, and third element goes to
+//  first part and so on. Now compute the sum of two parts and store into an array of size two.
+
+// function alternate_Sums(arr) {
+//     const result = [0, 0];
+//     for(let i = 0; i < arr.length; i++)
+//     {
+//       if(i % 2) result[1] += arr[i];
+//       else
+//         result[0] += arr[i];
+//     }
+//     return result
+//   }
+
+//   console.log(alternate_Sums([1, 3, 6, 2, 5, 10]))
+
+// Write a JavaScript program to check whether two arrays of integers of same length are similar or not.
+// The arrays will be similar if one array can be obtained from another array by swapping at most one pair of
+//  elements.
+
+// function array_checking(arrA, arrB) {
+//   if (arrA.length !== arrB.length) return false;
+//   let result = true;
+//   arrA.forEach((element, i) => {
+//     if (element !== arrB[i]) result = false;
+//   });
+//   return result;
+// }
+
+// console.log(array_checking([10, 20, 30], [10, 20, 30]));
+// console.log(array_checking([10, 20, 30], [30, 10, 20]));
+// console.log(array_checking([10, 20, 30, 40], [10, 30, 20, 40]));
+
+// Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to 
+// obtain a correct expression.
+
+// function foo(x,y,z){
+//     return x + y == z || x * y == z || x / y == z || x - y == z;
+// }
+
+// console.log(foo(10, 25, 35))
+// console.log(foo(10, 25, 250))
+// console.log(foo(30, 25, 5))
+// console.log(foo(100, 25, 4.0))
+// console.log(foo(100, 25, 25))
+
