@@ -720,7 +720,7 @@
 // console.log(array_checking([10, 20, 30], [30, 10, 20]));
 // console.log(array_checking([10, 20, 30, 40], [10, 30, 20, 40]));
 
-// Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to 
+// Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to
 // obtain a correct expression.
 
 // function foo(x,y,z){
@@ -733,3 +733,108 @@
 // console.log(foo(100, 25, 4.0))
 // console.log(foo(100, 25, 25))
 
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 12 June *
+ *
+ ********/
+
+// Write a JavaScript program to find the number which appears most in a given array of integers.
+// function findMostElem(arr) {
+
+//   let uniq = [...new Set(arr)];
+
+//   let appear = [];
+//   let maxApear = [];
+
+//   for (let elem of uniq) {
+//     let time = 0;
+//     let obj = {};
+//     for (let i = 0; i < arr.length; i++) {
+//       if (elem == arr[i]) {
+//         time++;
+//         obj.time = time;
+//         obj.elem = elem;
+//       }
+//     }
+//     appear.push(obj);
+//     maxApear.push(time);
+//   }
+
+//   let mostTime = Math.max(...maxApear);
+//   let appearMost = appear.filter((item) => item.time >= mostTime);
+
+//   return appearMost[0].elem;
+// }
+
+// console.log(findMostElem([1, 2, 3, 4, 5, 1, 1, 3])); // 1
+
+// Write a JavaScript program to replace all the numbers with a specified number of a given array of integers.
+
+// function foo(arr, oldnum, newNum) {
+//   for (let i = 0; i <= arr.length; i++) {
+//     if (arr[i] == oldnum) {
+//       arr[i] = newNum;
+//     }
+//   }
+//   return arr;
+// }
+// const arr = [1, 2, 3, 2, 2, 8, 1, 9];
+// console.log("org ", arr);
+
+// console.log("new ",foo(arr, 2, 5));
+
+// Write a JavaScript program to compute the sum of absolute differences of consecutive numbers of a given array of integers.
+
+// function foo(arr) {
+//   let result = 0;
+//   for (let i = 1; i < arr.length; i++) {
+//     result += Math.abs(arr[i] - arr[i - 1]);
+//   }
+//   return result;
+// }
+
+// const arr = [1, 2, 3, 2, -5];
+// console.log(foo(arr));
+
+// Write a JavaScript program to switch case of the minimum possible number of letters to make a given string written in the upper case or in the lower case.
+
+// function foo(str) {
+//   let x = 0;
+//   let y = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (/[A-Z]/.test(str[i])) {
+//       x++;
+//     } else {
+//       y++;
+//     }
+//   }
+//   let result = x > y ? str.toUpperCase() : str.toLowerCase();
+//   return result;
+// }
+// console.log(foo("PHp"));
+
+// Write a JavaScript program to check whether it is possible to rearrange characters of a given string in such
+// way that it will become equal to another given string
+
+// function foo(str, strA) {
+//   return str.split("").sort().join("") == strA.split("").sort().join("");
+// }
+
+// console.log(foo("xyz", "xya"));
+// console.log(foo("xyz", "xyz"));
+
+// Write a JavaScript program to check whether there is at least one element which occurs in two given sorted arrays of integers
+
+// function foo(arr1, arr2) {
+//   for (let i of arr1) {
+//     if (arr2.includes(i)) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+// console.log(foo([1, 2, 3], [3, 4, 5]));
