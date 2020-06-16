@@ -838,3 +838,35 @@
 //   }
 // }
 // console.log(foo([1, 2, 3], [3, 4, 5]));
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 15 June *
+ *
+ ********/
+
+// Write a JavaScript program to check whether a given string represents a correct sentence or not. A string is considered correct sentence if it starts with the capital letter and ends with a full stop (.).
+
+// function foo(str) {
+//   let inputA = str[0];
+//   let inputB = str[str.length - 1];
+//   return /[A-Z]/.test(inputA) && inputB == ".";
+// }
+
+// console.log(
+//   foo(
+//     "This tool will help you write better English and efficiently corrects texts."
+//   )
+// );
+
+// Write a JavaScript program to check whether a given integer has an increasing digits sequence.
+
+// function foo(intgr) {
+//   let arr = ("" + intgr).split("");
+//   for (var i = 0; i < arr.length - 1; i++) {
+//     if (parseInt(arr[i]) >= parseInt(arr[i + 1])) return false;
+//   }
+//   return true;
+// }
+// console.log(foo(1223));
