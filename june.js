@@ -870,3 +870,114 @@
 //   return true;
 // }
 // console.log(foo(1223));
+
+/**********  This Keyword */
+// let title = "main";
+// const ab = {
+//   title: "rajat",
+//   tags: ["a", "b", "c"],
+//   foo() {
+//     this.tags.forEach((a) => {
+//       console.log(a, this.title);
+//     });
+//   },
+// };
+
+// ab.foo();
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 16June *
+ *
+ ********/
+
+// Write a JavaScript program to check whether a given array of integers represents either a strictly increasing or a strictly decreasing sequence.
+
+// function foo(num) {
+//   let res = false;
+//   for (let i = 0; i < num.length - 1; i++) {
+//     if (num[i + 1] - num[i] == 1 || num[i + 1] - num[i] == -1) {
+//       res = true;
+//     } else {
+//       res = false;
+//       break;
+//     }
+//   }
+//   return res;
+// }
+
+// console.log(foo([-3, -2, -1])); // true
+// console.log(foo([-3, -2, 0, 2, 3])); // false
+// console.log(foo([4, 3, 2])); // true
+
+// Write a JavaScript program to find the longest string from a given array.
+
+// function foo(str) {
+//   let res;
+//   for (let i = 0; i < str.length - 1; i++) {
+//     if (str[i] > str[i + 1]) {
+//       res = str[i];
+//     } else {
+//       res = str[i + 1];
+//     }
+//   }
+//   return res;
+// }
+
+// console.log(foo(["ab", "a", "abcd"]));
+// or
+// function foo(strarr) {
+//   let maxLength = Math.max(...strarr.map((a) => a.length));
+//   let res = strarr.filter((a) => a.length == maxLength)[0];
+//   return res;
+// }
+// console.log(foo(["ab", "a", "abcd"]));
+
+// Write a JavaScript program to get the largest even number from an array of integers.
+
+// function foo(num) {
+//   const res = num.filter((a) => a % 2 == 0).sort((a, b) => b - a)[0];
+//   return res;
+// }
+
+// console.log(foo([20, 40, 200]));
+// console.log(foo([20, 40, 200, 402])); // 200
+
+// Check Prime Number
+// const isPrime = (num) => {
+//   for (let i = 2; i < num; i++) {
+//     if (num % i == 0) {
+//       return false;
+//     }
+//   }
+//   return num > 1;
+// };
+// console.log(isPrime(1));
+// console.log(isPrime(2));
+// console.log(isPrime(3));
+// console.log(isPrime(4));
+// console.log(isPrime(5));
+
+// Write a JavaScript program to find the smallest round number that is not less than a given value.
+
+// function foo(num) {
+//   while (num % 10) {
+//     num++;
+//   }
+//   return num;
+// }
+// console.log(foo(26));
+
+// Write a JavaScript program to find the number of even digits in a given integer.
+// function foo(num) {
+//   let res = num
+//     .toString()
+//     .split("")
+//     .filter((a) => a % 2 == 0).length;
+//   return res;
+// }
+
+// console.log(foo(123));
+// console.log(foo(1020));
+// console.log(foo(102));
