@@ -981,3 +981,83 @@
 // console.log(foo(123));
 // console.log(foo(1020));
 // console.log(foo(102));
+
+/****************************************************************   ENDS    ***********************************************************************************************/
+/********
+ *
+ * 17 June *
+ *
+ ********/
+
+// Write a JavaScript program to create an array of prefix sums of the given array.
+
+// function foo(num) {
+//   let sum = [];
+//   let prefix = 0;
+//   for (let i = 0; i < num.length; i++) {
+//     prefix += num[i];
+//     sum.push(prefix);
+//   }
+//   return sum;
+// }
+// console.log(foo([1, 2, 3, 4, 5]));
+// console.log(foo([1, 2, -3, 4, 5]));
+
+// Write a JavaScript program to find all distinct prime factors of a given integer.
+
+// function foo(num) {
+//   let dis = [];
+//   let d = 2;
+//   while (num > 2) {
+//     if (num % d == 0) {
+//       dis.push(d);
+//       num /= d;
+//     } else {
+//       d++;
+//     }
+//   }
+//   return [...new Set(dis)];
+// }
+
+// console.log(foo(100));
+
+// Write a JavaScript program to check whether a given fraction is proper or not.
+
+// function proper_improper_test(num) {
+
+//   return Math.abs(num[0] / num[1]) < 1
+//     ? "Proper fraction."
+//     : "Improper fraction.";
+// }
+// console.log(proper_improper_test([12, 300]));
+// console.log(proper_improper_test([2, 4]));
+// console.log(proper_improper_test([103, 3]));
+// console.log(proper_improper_test([104, 2]));
+// console.log(proper_improper_test([5, 40]));
+
+// Write a JavaScript program to find duplicate element/value in an array in js
+
+// uniqueCount = [
+//   "a",
+//   "b",
+//   "c",
+//   "d",
+//   "d",
+//   "e",
+//   "a",
+//   "b",
+//   "c",
+//   "f",
+//   "g",
+//   "h",
+//   "h",
+//   "h",
+//   "e",
+//   "a",
+// ];
+// var count = {};
+// uniqueCount.forEach((element) => {
+//   count[element] = (count[element] || 0) + 1;
+// });
+// console.log(count);
+
