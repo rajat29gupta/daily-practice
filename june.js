@@ -1061,3 +1061,45 @@
 // });
 // console.log(count);
 
+// Write a JavaScript program to remove all characters from a given string that appear more than once.
+
+// function remove_duplicate_cchars(str) {
+//   var arr_char = str.split("");
+//   var result_arr = [];
+
+//   for (var i = 0; i < arr_char.length; i++) {
+//     console.log("str.indexOf(arr_char[i]) ", str.indexOf(arr_char[i]));
+//     console.log("str.lastIndexOf(arr_char[i]) ", str.lastIndexOf(arr_char[i]));
+
+//     if (str.indexOf(arr_char[i]) === str.lastIndexOf(arr_char[i]))
+//       result_arr.push(arr_char[i]);
+//   }
+
+//   return result_arr.join("");
+// }
+// console.log(remove_duplicate_cchars("abcdabc"));
+// console.log(remove_duplicate_cchars("python"));
+// console.log(remove_duplicate_cchars("abcabc"));
+// console.log(remove_duplicate_cchars("1365451"));
+
+// Write a JavaScript program to replace the first digit in a string (should contains at least digit) with $ character.
+// function replace_first_digit(input_str) {
+//   return input_str.replace(/[0-9]/, "$");
+// }
+// console.log(replace_first_digit("abc1dabc"));
+// console.log(replace_first_digit("p3ython"));
+// console.log(replace_first_digit("ab1cabc"));
+
+// Write a JavaScript program to find the position of a rightmost round number in an array of integers. Returns 0 if there are no round number.
+
+function foo(num) {
+  let res = 0;
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] % 10 === 0) {
+      res = i;
+    }
+  }
+  return res;
+}
+const arr = [1, 22, 30, 54, 56];
+console.log(foo(arr));
