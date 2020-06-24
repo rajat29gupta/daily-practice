@@ -1092,14 +1092,72 @@
 
 // Write a JavaScript program to find the position of a rightmost round number in an array of integers. Returns 0 if there are no round number.
 
-function foo(num) {
-  let res = 0;
-  for (let i = 0; i < num.length; i++) {
-    if (num[i] % 10 === 0) {
-      res = i;
-    }
-  }
-  return res;
-}
-const arr = [1, 22, 30, 54, 56];
-console.log(foo(arr));
+// function foo(num) {
+//   let res = 0;
+//   for (let i = 0; i < num.length; i++) {
+//     if (num[i] % 10 === 0) {
+//       res = i;
+//     }
+//   }
+//   return res;
+// }
+// const arr = [1, 22, 30, 54, 56];
+// console.log(foo(arr));
+
+// Write a JavaScript program to check whether all the digits in a given number are the same or not.
+
+// function isSame(num) {
+//   let arr = num.toString().split("");
+//   for (i = 0; i < arr.length - 1; i++) {
+//     if (arr[i] !== arr[i + 1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isSame(1234));
+// console.log(isSame(1111));
+// console.log(isSame(22222222));
+
+// Find the number of elements which presents in both of the given arrays
+// function test_same_elements_both_arrays(arra1, arra2) {
+//   let result = 0;
+//   for (let i = 0; i < arra1.length; i++) {
+//     for (let j = 0; j < arra2.length; j++) {
+//       if (arra1[i] === arra2[j]) {
+//         result++;
+//       }
+//     }
+//   }
+//   return result;
+// }
+// console.log(test_same_elements_both_arrays([1, 2, 3, 4], [1, 2, 3, 4]));
+// console.log(test_same_elements_both_arrays([1, 2, 3, 4], [1, 2, 3, 5]));
+// console.log(test_same_elements_both_arrays([1, 2, 3, 4], [11, 22, 33, 44]));
+
+// Write a JavaScript program to sort the strings of a given array of strings in the order of increasing lengths.
+
+// function test(arra) {
+//   return arra.sort((x, y) => x.length - y.length);
+// }
+
+// let arra = ["xyz", "acd", "aa", "bb", "zzz", "", "a", "b"];
+// console.log("Original array: " + arra + "\n");
+// console.log(test(["xyz", "acd", "aa", "bb", "zzz", "", "a", "b"]));
+
+
+// Write a JavaScript program to compute the sum of all digits that occur in a given string.
+
+
+// function sum_digits_from_string(dstr) {
+//   var dsum = 0;
+
+//   for (var i = 0; i < dstr.length; i++) {
+//     if (/[0-9]/.test(dstr[i])) dsum += parseInt(dstr[i]);
+//   }
+//   return dsum;
+// }
+
+// console.log(sum_digits_from_string("abcd12efg9"));
+// console.log(sum_digits_from_string("w3resource"));
