@@ -1146,9 +1146,7 @@
 // console.log("Original array: " + arra + "\n");
 // console.log(test(["xyz", "acd", "aa", "bb", "zzz", "", "a", "b"]));
 
-
 // Write a JavaScript program to compute the sum of all digits that occur in a given string.
-
 
 // function sum_digits_from_string(dstr) {
 //   var dsum = 0;
@@ -1161,3 +1159,77 @@
 
 // console.log(sum_digits_from_string("abcd12efg9"));
 // console.log(sum_digits_from_string("w3resource"));
+
+// Write a JavaScript program to swap two halves of a given array of integers of even length.
+
+// function foo(num) {
+//   if (num.length % 2 === 0) {
+//     let num1;
+//     let num2;
+//     num1 = num.slice(0, num.length / 2);
+//     num2 = num.slice(num.length / 2);
+//     let num3 = [...num2, ...num1];
+//     return num3;
+//   }
+//   return false;
+// }
+
+// console.log(foo([1, 2, 3, 4, 5, 6]));
+// console.log(foo([1, 2, 3, 4, 5, 6, 7]));
+
+// Write a JavaScript program to change the capitalization of all letters in a given string.
+// function foo(str) {
+//   let str1 = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (/[A-Z]/.test(str[i])) str1 += str[i].toLowerCase();
+//     else str1 += str[i].toUpperCase();
+//   }
+//   return str1;
+// }
+
+// console.log(foo("rajat"));
+// console.log(foo("Germany"));
+
+// Write a JavaScript program to swap pairs of adjacent digits of a given integer of even length.
+// function foo(num) {
+//   let str = num.toString().split("");
+//   if (str.length % 2 != 0) return false;
+
+//   for (let i = 0; i < str.length - 1; i += 2) {
+//     let temp;
+//     temp = str[i];
+//     str[i] = str[i + 1];
+//     str[i + 1] = temp;
+//   }
+//   return str;
+// }
+
+// console.log(foo(1234));
+// console.log(foo(123456));
+// console.log(foo(12345));
+
+
+// repeat
+// uniqueCount = [
+//   "a",
+//   "b",
+//   "c",
+//   "d",
+//   "d",
+//   "e",
+//   "a",
+//   "b",
+//   "c",
+//   "f",
+//   "g",
+//   "h",
+//   "h",
+//   "h",
+//   "e",
+//   "a",
+// ];
+// let arr = [];
+// uniqueCount.forEach((element) => {
+//   arr[element] = (arr[element] || 0) + 1;
+// });
+// console.log(arr);
