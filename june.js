@@ -1208,7 +1208,6 @@
 // console.log(foo(123456));
 // console.log(foo(12345));
 
-
 // repeat
 // uniqueCount = [
 //   "a",
@@ -1233,3 +1232,47 @@
 //   arr[element] = (arr[element] || 0) + 1;
 // });
 // console.log(arr);
+
+// Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one.
+
+// function foo(obj1,obj2){
+//     return JSON.stringify(obj1)===JSON.stringify(obj2);
+// }
+
+// console.log(foo({  hair: 'long', beard: true }, { hair: 'long', beard: true })); // true
+// console.log(foo({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); // false
+// console.log(foo({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
+
+// Write a JavaScript program to converts a specified number to an array of digits.
+
+// let str = 1123123;
+// str = str.toString();
+
+// console.log(Array.from(str));
+// console.log([...str]);
+// console.log(Object.assign([], str));
+// console.log(str.split(""));
+
+// Write a JavaScript program to filter out the specified values from a specified array. Return the original array without the filtered values.
+
+// function foo(arr, ...tar) {
+//   tar.forEach((tar) => arr= arr.filter((a) => (a !=tar)));
+//   return arr;
+// }
+// let arr = [5, 8, 14, 16, 19];
+// console.log(foo(arr, 5, 14));
+// let arr1 = ["a", "b", "c"];
+// console.log(foo(arr1, "b", "c"));
+
+// Write a JavaScript program to extract out the values at the specified indexes from a specified array.
+// let arra1 = ["a", "b", "c", "d", "e", "f"];
+// console.log(foo(arra1, [1, 3]));
+// let arra2 = [1, 2, 3, 4, 5, 6, 7];
+// console.log(foo(arra2, [4]));
+
+// function foo(arr, tar) {
+//   const res = tar.map((da) => {
+//     return arr[da];
+//   });
+//   return res;
+// }
