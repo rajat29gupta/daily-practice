@@ -1276,3 +1276,34 @@
 //   });
 //   return res;
 // }
+
+// Write a JavaScript program to filter out the non-unique values in an array.
+
+// const foo = (arr) => arr.filter((i) => arr.indexOf(i) === arr.lastIndexOf(i));
+// console.log(foo([1, 2, 2, 3, 4, 4, 5]));
+// console.log(foo([1, 2, 3, 4]));
+
+// Write a JavaScript program to decapitalize the first letter of a string.
+// Note: Omit the upperRest parameter to keep the rest of the string intact, or set it to true to convert to uppercase
+
+// const foo = (str,stat=false)=>str[0].toLowerCase()+ (stat?str.slice(1).toUpperCase():str.slice(1))
+
+// console.log(foo("Rajat"));
+// console.log(foo("WebDev",true));
+
+// Write a JavaScript program to filter out the element(s) of a given array, that have one of the specified values.
+
+// const foo = (arr, ...arg) => {
+//     return arr.filter(arr=> !arg.includes(arr))
+// };
+// console.log(foo([2, 1, 2, 3], 1, 2));
+// console.log(foo([2, 1, 2, 3], 3));
+
+// Write a JavaScript program to find all elements in a given array except for the first one. Return the whole array if the array's length is 1.
+
+// function foo(arr) {
+//   return arr.length > 1 ? arr.slice(1) : arr;
+// }
+
+// console.log(foo([1, 2, 3]));
+// console.log(foo([1]));
