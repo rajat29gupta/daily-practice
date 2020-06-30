@@ -1307,3 +1307,26 @@
 
 // console.log(foo([1, 2, 3]));
 // console.log(foo([1]));
+
+// Write a JavaScript program to get a random number in the specified range.
+
+// function foo(min, max) {
+//   return Math.random() * (max - min) + min;
+// }
+
+// console.log(foo(20, 100));
+// console.log(foo(10, 80));
+
+// Write a JavaScript program to get a random integer in the specified range.
+
+// const foo = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+// console.log(foo(1, 10));
+// console.log(foo(20, 50));
+
+const random_intArray_In_Range = (min, max, n = 1) =>
+  Array.from(
+    { length: n },
+    () => Math.floor(Math.random() * (max - min + 1)) + min
+  );
+console.log(random_intArray_In_Range(1, 20, 10));
+console.log(random_intArray_In_Range(-10, 10, 5));
