@@ -2,10 +2,10 @@
   "name": "pract",
   "version": "1.0.0",
   "description": "",
-  "main": "june.js",
+  "main": "july.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon june"
+    "start": "nodemon july"
   },
   "author": "",
   "license": "ISC",
