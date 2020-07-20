@@ -60,3 +60,32 @@
 
 // console.log(foo("w3r"));
 // console.log(foo([100]));
+
+// Write a JavaScript program to create a deep clone of an object.
+// const a = { foo: "bar", obj: { a: 1, b: 2 } };
+// let aa=JSON.parse(JSON.stringify(a));
+// console.log(vbb);
+
+// Write a JavaScript program to  detect whether the website is being opened in a mobile device or a desktop/laptop.
+
+// const detectDeviceType = () =>
+//   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+//     ? 'Mobile'
+//     : 'Desktop';
+// console.log(detectDeviceType()); // "Mobile" or "Desktop"
+
+
+// Write a JavaScript program to take any number of iterable objects or objects with a length property and returns the longest one.
+
+
+const longestItem = (...vals) => {
+  let maxL = vals.map((s) => s.length);
+  return vals.find((p) => p.length == Math.max(...maxL));
+};
+
+console.log(longestItem("this", "is", "a", "testcase"));
+console.log(longestItem(...["a", "ab", "abc"]));
+console.log(longestItem(...["a", "ab", "abc"], "abcd"));
+console.log(longestItem([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]));
+console.log(longestItem([1, 2, 3], "foobar"));
+console.log(longestItem("this", "is", "a", "testcase")); // testcase
