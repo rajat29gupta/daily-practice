@@ -74,18 +74,79 @@
 //     : 'Desktop';
 // console.log(detectDeviceType()); // "Mobile" or "Desktop"
 
-
 // Write a JavaScript program to take any number of iterable objects or objects with a length property and returns the longest one.
 
+// const longestItem = (...vals) => {
+//   let maxL = vals.map((s) => s.length);
+//   return vals.find((p) => p.length == Math.max(...maxL));
+// };
 
-const longestItem = (...vals) => {
-  let maxL = vals.map((s) => s.length);
-  return vals.find((p) => p.length == Math.max(...maxL));
-};
+// console.log(longestItem("this", "is", "a", "testcase"));
+// console.log(longestItem(...["a", "ab", "abc"]));
+// console.log(longestItem(...["a", "ab", "abc"], "abcd"));
+// console.log(longestItem([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]));
+// console.log(longestItem([1, 2, 3], "foobar"));
+// console.log(longestItem("this", "is", "a", "testcase")); // testcase
 
-console.log(longestItem("this", "is", "a", "testcase"));
-console.log(longestItem(...["a", "ab", "abc"]));
-console.log(longestItem(...["a", "ab", "abc"], "abcd"));
-console.log(longestItem([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]));
-console.log(longestItem([1, 2, 3], "foobar"));
-console.log(longestItem("this", "is", "a", "testcase")); // testcase
+// Write a JavaScript program to create a new string with the results of calling a provided function on every character in the calling string.
+
+// const mapStr = (str, fn) => fn(str)
+// console.log(mapStr('Javascript exercises', c => c.toUpperCase())) // JAVASCRIPT EXERCISES
+
+// Write a JavaScript program to reverse the order of the characters in the string.
+// const reverseString = str => [...str].reverse().join('');
+
+// console.log(reverseString('php'));
+// console.log(reverseString('foobar'));
+
+// Write a JavaScript function to check whether an `input` is an array or not.
+
+// const is_array = (arr) => Array.isArray(arr);
+// console.log(is_array("rajat"));
+// console.log(is_array([1, 2, 4, 0]));
+
+// 2. Write a JavaScript function to clone an array.
+
+// const array_Clone = (arr) => [...arr];
+
+// console.log(array_Clone([1, 2, 4, 0]));
+// console.log(array_Clone([1, 2, [4, 0]]));
+
+// 3. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array. Go to the editor
+
+// const first = (arr, index) => {
+//   if (index != null) {
+//     return arr.slice(0, index);
+//   } else {
+//     return arr[0];
+//   }
+// };
+
+// or;
+
+// const first = (arr, n = 1) => (n === 1 ? arr[0] : arr.slice(0, n));
+
+// console.log(first([7, 9, 0, -2]));
+// console.log(first([], 3));
+// console.log(first([7, 9, 0, -2], 3));
+// console.log(first([7, 9, 0, -2], 6));
+// console.log(first([7, 9, 0, -2], -3));
+
+// 4. Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array. Go to the editor
+// const last = (arr, n) => {
+//   if (n === undefined) {
+//     return arr[arr.length - 1];
+//   } else {
+//     return arr.slice(-n);
+//   }
+// };
+
+// console.log(last([7, 9, 0, -2]));
+// console.log(last([7, 9, 0, -2], 3));
+// console.log(last([7, 9, 0, -2], 6));
+
+// Write a simple JavaScript program to join all elements of the following array into a string.
+
+// let myColor = ["Red", "Green", "White", "Black"];
+// console.log(myColor.toString());
+// console.log(myColor.join());
