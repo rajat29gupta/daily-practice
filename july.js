@@ -150,3 +150,77 @@
 // let myColor = ["Red", "Green", "White", "Black"];
 // console.log(myColor.toString());
 // console.log(myColor.join());
+
+// Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8.
+// function ex6(nr) {
+//   var arr = [];
+//   for (var i = 0; i < nr.length; i++) {
+//     if (nr[i] % 2 === 0 && nr[i + 1] % 2 === 0) {
+//       arr.push(nr[i] + "-");
+//     } else arr.push(nr[i]);
+//   }
+//   return arr.join("");
+// }
+// console.log(ex6("025468"));
+
+// Write a JavaScript program to sort the items of an array.
+
+// var array = [-4,-8,-9,4,6,7,9];
+// var arr1=[-3,8,7,6,5,-4,3,2,1];
+
+// console.log(array.sort(function(a,b){return a-b;}));
+// console.log(arr1.sort(function(a,b){return a-b;}));
+
+// Write a JavaScript program to find the most frequent item of an array.
+
+// let array = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+// let max = 0,
+//   letter;
+// for (let i = 0; i < array.length; i++) {
+//   let count = 0;
+//   for (let j = 0; j < array.length; j++) {
+//     if (array[i] === array[j]) {
+//       ++count;
+//     }
+//   }
+//   if (max < count) {
+//     max = count;
+//     letter = array[i];
+//   }
+// }
+// console.log(letter + " : " + max + " times");
+
+// Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
+
+// function swap(sentence) {
+//   var newSentence = "";
+//   for (letter of sentence) {
+//       console.log(letter);
+//     newSentence +=
+//       letter.toUpperCase() !== letter
+//         ? letter.toUpperCase()
+//         : letter.toLowerCase();
+//   }
+//   return newSentence;
+// }
+
+// console.log(swap("RajaTTT"));
+
+
+// Write a JavaScript program which prints the elements of the following array.
+
+// function nestedLoop(array) {
+//   array.forEach(function (arrVal, index) {
+//     console.log(`Row ${index}`);
+//     arrVal.forEach(function (value) {
+//       console.log(value);
+//     });
+//   });
+// }
+// nestedLoop([
+//   [1, 2, 1, 24],
+//   [8, 11, 9, 4],
+//   [7, 0, 7, 27],
+//   [7, 4, 28, 14],
+//   [3, 10, 26, 7],
+// ]);
