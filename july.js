@@ -206,7 +206,6 @@
 
 // console.log(swap("RajaTTT"));
 
-
 // Write a JavaScript program which prints the elements of the following array.
 
 // function nestedLoop(array) {
@@ -224,3 +223,52 @@
 //   [7, 4, 28, 14],
 //   [3, 10, 26, 7],
 // ]);
+
+// Write a JavaScript program to find the sum of squares of a numeric vector.
+// let array = [1, 2, 1, 24, 6];
+// console.log(array.reduce((sum, item) => sum + item * item, 0));
+
+// Write a JavaScript program to compute the sum and product of an array of integers.
+// let array = [1, 2, 1, 24, 6];
+// console.log("Sum " + array.reduce((sum, item) => sum + item, 0));
+// console.log("Product " + array.reduce((sum, item) => sum * item, 1));
+
+// Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+// (function () {
+//   const arr = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
+//   const x = [...new Set(arr)].sort();
+//   console.log(x);
+// })();
+
+
+
+// Write a JavaScript program to display the colors in the following way:
+
+// function displayColors(...arrays) {
+//   arrays[0].forEach(function (value, index) {
+//     let order = null;
+
+//     switch (index) {
+//       case 0:
+//         order = `${index + 1}${arrays[1][1]}`;
+//         break;
+//       case 1:
+//         order = `${index + 1}${arrays[1][2]}`;
+//         break;
+//       case 2:
+//         order = `${index + 1}${arrays[1][3]}`;
+//         break;
+//       default:
+//         order = `${index + 1}${arrays[1][0]}`;
+//         break;
+//     }
+//     console.log(`${order} choice is ${value}`);
+//   });
+// }
+
+// displayColors(
+//   ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"],
+//   ["th", "st", "nd", "rd"]
+// );
+
+
