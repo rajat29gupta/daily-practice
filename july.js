@@ -240,8 +240,6 @@
 //   console.log(x);
 // })();
 
-
-
 // Write a JavaScript program to display the colors in the following way:
 
 // function displayColors(...arrays) {
@@ -271,4 +269,55 @@
 //   ["th", "st", "nd", "rd"]
 // );
 
+// Write a JavaScript program to shuffle an array.
 
+// function shortShuffle(arr) {
+//   return arr.sort(() => Math.floor(Math.random() * arr.length));
+// }
+
+// const myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(shortShuffle(myArray));
+
+// There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays.
+//
+
+// function sumindex(ar1, ar2) {
+//   let lenght = Math.max(ar1.length, ar2.length);
+//   let sum = [];
+//   for (let i = 0; i < lenght; i++) {
+//     sum.push((ar1[i] || 0) + (ar2[i] || 0));
+//   }
+//   return sum;
+// }
+// console.log(sumindex([1, 0, 2, 3, 4], [3, 5, 6, 7, 8, 13]));
+
+// Write a JavaScript program to find duplicate values in a JavaScript array.
+
+// function find_duplicate_in_array(arr) {
+//   var resultArr = [];
+//   arr = arr.sort();
+
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i + 1] == arr[i]) {
+//       resultArr.push("" + arr[i + 1]);
+//     }
+//   }
+//   // returns only unique values
+//   return [...new Set(resultArr)];
+// }
+// console.log(find_duplicate_in_array([1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6]));
+
+// Write a JavaScript program to flatten a nested (any depth) array. If you pass shallow, the array will only be flattened a single level.
+
+
+// function flatten(arr, shw, flnd = []) {
+//   if (shw) return arr.reduce((a, b) => a.concat(b), []);
+
+//   arr.forEach((el) => {
+//     Array.isArray(el) ? flatten(el, shw, flnd) : flnd.push(el);
+//   });
+//   return flnd;
+// }
+// const arr = [1, [2], [3, [[4, [10, [12]]], 11]], [5, 6]];
+// console.log(flatten(arr)); /* [1, 2, 3, 4, 10, 12, 11, 5, 6] */
+// console.log(flatten(arr, true)); /* [1, 2, 3, [[4, [10, [12]]], 11], 5, 6] */
