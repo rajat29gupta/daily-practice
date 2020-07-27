@@ -309,7 +309,6 @@
 
 // Write a JavaScript program to flatten a nested (any depth) array. If you pass shallow, the array will only be flattened a single level.
 
-
 // function flatten(arr, shw, flnd = []) {
 //   if (shw) return arr.reduce((a, b) => a.concat(b), []);
 
@@ -321,3 +320,55 @@
 // const arr = [1, [2], [3, [[4, [10, [12]]], 11]], [5, 6]];
 // console.log(flatten(arr)); /* [1, 2, 3, 4, 10, 12, 11, 5, 6] */
 // console.log(flatten(arr, true)); /* [1, 2, 3, [[4, [10, [12]]], 11], 5, 6] */
+
+// Write a JavaScript program to compute the union of two arrays
+
+// const union = (arr, arrA) => {
+//   const sortA = new Set([...arr]);
+//   const sortB = new Set([...arrA]);
+//   return new Set([...sortA, ...sortB]);
+// };
+// console.log(union([1,1, 2, 3], [100, 2, 1, 10]));
+
+// Write a JavaScript function to find the difference of two arrays.
+
+// function differenceOf2Arrays(array1, array2) {
+//   const temp = [];
+//   array1 = array1.toString().split(",").map(Number);
+//   array2 = array2.toString().split(",").map(Number);
+
+//   for (var i in array1) {
+//     if (!array2.includes(array1[i])) temp.push(array1[i]);
+//   }
+//   for (i in array2) {
+//     if (!array1.includes(array2[i])) temp.push(array2[i]);
+//   }
+//   console.log("temp ", temp);
+//   return temp.sort((a, b) => a - b);
+// }
+
+// console.log("1 ",differenceOf2Arrays([1, 2, 3], [100, 2, 1, 10]));
+// console.log("2 ",differenceOf2Arrays([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
+
+// Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.
+// const removeFalsey = arr => arr.filter(Boolean)
+// console.log(removeFalsey([NaN, 0, 15, false, -22, '',undefined, 47, null]));
+
+// Write a JavaScript function to sort the following array of objects by title value.
+
+// var library = [
+//   { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
+//   { author: "Steve Jobs", title: "Walter Isaacson", libraryID: 4264 },
+//   {
+//     author: "Suzanne Collins",
+//     title: "Mockingjay: The Final Book of The Hunger Games",
+//     libraryID: 3245,
+//   },
+// ];
+// var arr = [];
+// var res = library.sort(function (a, b) {
+//   return a.title > b.title;
+// });
+
+// // res = JSON.stringify(res);
+// console.log(res);
