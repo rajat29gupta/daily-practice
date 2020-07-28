@@ -372,3 +372,61 @@
 
 // // res = JSON.stringify(res);
 // console.log(res);
+
+// Write a JavaScript program to find a pair of elements (indices of the two numbers) from an given array whose sum equals a specific target number.
+
+// function twoSum(arr, sum) {
+//   var resultArr = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] + arr[i + 1] === sum) {
+//       resultArr.push(i, arr.indexOf(arr[i + 1]));
+//     }
+//   }
+//   return resultArr;
+// }
+// console.log(twoSum([10, 20, 10, 40, 50, 60, 70], 50)); // result is = [2,3]
+
+// Write a JavaScript function to retrieve the value of a given property from all elements in an array.
+
+// function ex27(arr) {
+//   let non = arr.filter(Boolean);
+//   return non;
+// }
+
+// console.log(ex27([NaN, 0, 15, false, -22, "", undefined, 47, null]));
+
+// Write a JavaScript function to find the longest common starting substring in a set of strings.
+// function longest_common_starting_substring(arr) {
+//   for (var i = 0; i < arr[0].length; i++) {
+//     if (arr[0][i] != arr[1][i]) {
+//       return arr[0].slice(0, i);
+//     }
+//   }
+//   return arr[0];
+// }
+// console.log(longest_common_starting_substring(["gossss", "google"]));
+
+// Write a JavaScript function to fill an array with values (numeric, string with one character) on supplied bounds.
+
+// function fillArray(start, end, step) {
+//   var result = [];
+//   if (typeof start === "string" && typeof end === "string") {
+//     for (var i = start.charCodeAt(0); end.charCodeAt(0) > i; i += step) {
+//       result.push(String.fromCharCode(i));
+//     }
+//   } else if (typeof start === "number" && typeof end === "number") {
+//     for (var i = start; end > i; i += step) {
+//       result.push(i);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(fillArray("b", "z", 3));
+// console.log(fillArray(2, 100, 6));
+
+// Write a JavaScript function to merge two arrays and removes all duplicates elements.
+// var array1 = [1, 2, 3, 30];
+// var array2 = [2, 30, 1];
+// const merge_array_result = (a, b) => new Set([...a, ...b]);
+// console.log(merge_array_result(array1, array2));
