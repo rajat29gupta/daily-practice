@@ -430,3 +430,41 @@
 // var array2 = [2, 30, 1];
 // const merge_array_result = (a, b) => new Set([...a, ...b]);
 // console.log(merge_array_result(array1, array2));
+
+// Write a JavaScript function to remove a specific element from an array.
+// function remove_array_element(array, a) {
+//   return array.filter((e) => e != a);
+// }
+
+// console.log(remove_array_element([2, 5, 9, 6], 5));
+
+// Write a JavaScript function to find an array contains a specific element.
+// arr = [2, 5, 9, 6];
+// console.log(arr.includes(5));
+
+// Write a JavaScript function to get nth largest element from an unsorted array.
+// function nthlargest(array, f) {
+//   array.sort((a, b) => b - a);
+//   return array[f - 1];
+// }
+// console.log(nthlargest([43, 56, 23, 89, 88, 90, 99, 652], 4));
+
+// Write a JavaScript function to get a random item from an array.
+
+// function j(str) {
+//   var b = Math.floor(Math.random() * (str.length - 1));
+//   console.log(b);
+// }
+// j([1, 2, 3, 4, 5, 3, 5, 7]);
+
+// Write a JavaScript function to create a specified number of elements and pre-filled numeric value array.
+
+// function fillArray(x, y) {
+//   let result = [];
+//   while (result.length < x) {
+//     result.push(y);
+//   }
+//   console.log(result);
+// }
+// fillArray((x = 6), (y = 0));
+// fillArray((x = 4), (y = 11));
