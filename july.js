@@ -468,3 +468,70 @@
 // }
 // fillArray((x = 6), (y = 0));
 // fillArray((x = 4), (y = 11));
+
+// Write a JavaScript function to create a specified number of elements and pre-filled string value array.
+
+// const fillArr = (x, y) => {
+//   let result = [];
+//   while (result.length < x) {
+//     result.push(y);
+//   }
+//   return result;
+// };
+
+// console.log(fillArr(3, "default value"));
+// console.log(fillArr(4, "password"));
+
+// Write a JavaScript function to move an array element from one position to another.
+
+// let move = (array, position1, position2) => {
+//   if (position1 < 0) {
+//     position1 = array.length + position1;
+//   }
+//   if (position2 < 0) {
+//     position2 = array.length + position2;
+//   }
+//   let removed = array.splice(position1, 1);
+//   array.splice(position2, 0, removed[0]);
+//   return array;
+// };
+
+// console.log(move([10, 20, 30, 40, 50], 0, 2));
+// console.log(move([10, 20, 30, 40, 50], -1, -2));
+
+// Write a JavaScript function to filter false, null, 0 and blank values from an array
+// const filter_array_values = (arr) => arr.filter(Boolean);
+// console.log(filter_array_values([58, "", "abcd", true, null, false, 0]));
+
+// Write a JavaScript function to generate an array of specified length, filled with integer numbers, increase by one from starting position.
+// function rangeInt(start, length) {
+//   let arr = [];
+//   for (let index = 0; index < length; index++) {
+//     arr.push(start++);
+//   }
+//   return arr;
+// }
+// console.log(rangeInt(15, 5));
+// console.log(rangeInt(1, 4));
+// console.log(rangeInt(-6, 4));
+
+// Write a JavaScript function to generate an array between two integers of 1 step length.
+// function rangeBetween(a, b) {
+//   var g = b - a;
+//   var emp = [a];
+//   for (var i = 1; i <= g; i++) {
+//     emp.push(a + i);
+//   }
+//   return emp;
+// }
+// console.log(rangeBetween(-4, 7));
+
+function difference(arr1, arr2) {
+    arr1 = arr1.flat(Infinity);
+    arr2 = arr2.flat(Infinity);
+  var resultArr = [...arr1, ...arr2];
+  return [...new Set(resultArr)].sort((a, b) => a - b);
+}
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
