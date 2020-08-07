@@ -64,3 +64,79 @@
 //   return resultStr.join("");
 // }
 // console.log(swapcase("AaBbc"));
+
+// Write a JavaScript function to convert a string into camel case
+// function camelize(str) {
+//   return str
+//     .split(" ")
+//     .map((value) => value.charAt(0).toUpperCase() + value.slice(1))
+//     .join("");
+// }
+// console.log(camelize("JavaScript Exercises"));
+// console.log(camelize("JavaScript exercises"));
+// console.log(camelize("JavaScriptexercises"));
+
+// Write a JavaScript function to uncamelize a string
+// function uncamelize(str, n) {
+//   var res = str.replace(/[A-Z]/g, n + "w");
+//   if (typeof n === "undefined") {
+//     return str.replace(/[A-Z]/g, " " + "w");
+//   }
+//   return res;
+// }
+
+// console.log(uncamelize("helloWorld"));
+// console.log(uncamelize("helloWorld", "-"));
+// console.log(uncamelize("helloWorld", "_"));
+
+// Write a JavaScript function to concatenates a given string n times
+
+// function repeat(str, n) {
+//   var res = "";
+//   if (typeof n === "undefined") {
+//     res = str;
+//     return str;
+//   } else {
+//     res = str.repeat(n);
+//     return res;
+//   }
+// }
+
+// console.log(repeat("Ha!"));
+// console.log(repeat("Ha!", 2));
+// console.log(repeat("Ha!", 3));
+// console.log(repeat("Ha!", 6));
+
+// Write a JavaScript function to insert a string within a string at a particular position (default is 1).
+// function insert(str, txt = "", pos = 0) {
+//   let p1 = str.slice(0, pos);
+//   let p3 = str.slice(pos);
+//   return p1 + txt + p3;
+// }
+// console.log(insert("We are doing some exercises.")); // "We are doing some exercises."
+// console.log(insert("We are doing some exercises.", "JavaScript ")); // "JavaScript We are doing some exercises."
+// console.log(insert("We are doing some exercises.", "JavaScript ", 18)); // "We are doing some JavaScript exercises."
+
+// Write a JavaScript function to humanized number (Formats a number to a human-readable string.) with the correct suffix such as 1st, 2nd, 3rd or 4th.
+
+// function humanize_format(num) {
+//   if (num == undefined) {
+//     return "";
+//   }
+//   const str = num.toString();
+//   const last = str.charAt(str.length - 1);
+//   if (last === "1") {
+//     return str + "st";
+//   } else if (last === "2") {
+//     return str + "nd";
+//   } else if (last === "3") {
+//     return str + "rd";
+//   } else {
+//     return str + "th";
+//   }
+// }
+// console.log(humanize_format());
+// console.log(humanize_format(1)); 
+// console.log(humanize_format(8));
+// console.log(humanize_format(301)); 
+// console.log(humanize_format(402)); 
