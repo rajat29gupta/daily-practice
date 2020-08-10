@@ -136,7 +136,75 @@
 //   }
 // }
 // console.log(humanize_format());
-// console.log(humanize_format(1)); 
+// console.log(humanize_format(1));
 // console.log(humanize_format(8));
-// console.log(humanize_format(301)); 
-// console.log(humanize_format(402)); 
+// console.log(humanize_format(301));
+// console.log(humanize_format(402));
+
+// Write a JavaScript function to truncates a string if it is longer than the specified number of characters. Truncated strings will end with a translatable ellipsis sequence ("…") (by default) or specified characters.
+
+// const text_truncate = (str, n, ending) => {
+//   return n === undefined
+//     ? str
+//     : ending !== undefined
+//     ? str.slice(0, n) + ending
+//     : str.slice(0, n) + "...";
+// };
+
+// console.log(text_truncate("We are doing JS string exercises."));
+// console.log(text_truncate("We are doing JS string exercises.", 19));
+// console.log(text_truncate("We are doing JS string exercises.", 15, "!!"));
+
+// Write a JavaScript function to chop a string into chunks of a given length.
+
+// function string_chop(str, chars = str.length) {
+//   let arr = [];
+//   for (let start = 0; start < str.length; start += chars) {
+//     let elem = str.slice(start, start + chars);
+//     arr.push(elem);
+//   }
+//   return arr;
+// }
+// console.log(string_chop("w3resource")); // ["w3resource"]
+// console.log(string_chop("w3resource", 2)); // ["w3", "re", "so", "ur", "ce"]
+// console.log(string_chop("w3resource", 3)); // ["w3r", "eso", "urc", "e"]
+
+// Write a JavaScript function to count the occurrence of a substring in a string.
+
+// count = function (str, search) {
+//   var count = 0;
+//   str = str.replace(/[^0-9a-z]/gi, "").toLowerCase();
+//   for (var i = 0; i < str.length; i++) {
+//     if (str.substr(i, search.length) == search) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(count("The quick brown fox jumps over the lazy dog", "the"));
+// console.log(count("The quick brown fox jumps over the lazy dog", "fox", false));
+
+// Write a JavaScript function to escape a HTML string.
+// function escape_HTML(str) {
+//   return str.replace(/(<)|(>)|(")/g, function (match, p1, p2, p3) {
+//     return (p1 = "&lt;");
+//     return (p2 = "&gt;");
+//     return (p3 = "&quot;");
+//   });
+// }
+// console.log(
+//   escape_HTML('<a href="javascript-string-exercise-17.php" target="_blank">')
+// );
+
+// Write a JavaScript function that can pad (left, right) a string to get to a determined length.
+
+// function formatted_string(pad, str, pos) {
+//   str = str.toString();
+//   if (pos === "l") {
+//     return pad.slice(0, pad.length - str.length) + str;
+//   } else {
+//     return str + pad.slice(str.length);
+//   }
+// }
+// console.log(formatted_string("0000", 123, "l")); // "0123"
+// console.log(formatted_string("00000000", 123, "")); // "12300000"
