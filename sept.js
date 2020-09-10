@@ -83,3 +83,75 @@
 
 // }
 // console.log(sentenceCase('PHP exercises. python exercises'));
+
+// Write a JavaScript function to test case insensitive (except special Unicode characters) string comparison.
+// const foo = (str, str1) => {
+//     return str.toUpperCase() === str1.toUpperCase();
+// }
+// console.log(foo('abcd', 'AbcD'));
+
+// console.log(foo('ABCD', 'Abce'));
+
+
+// Write a JavaScript function to create a case-insensitive search
+// const poo = (str, srch) => {
+//     str = str.toLowerCase();
+//     srch = srch.toLowerCase();
+//     return str.includes(srch)
+// }
+// console.log(poo('JavaScript Exercises', 'exercises'));
+// console.log(poo('JavaScript Exercises', 'Exercises'));
+// console.log(poo('JavaScript Exercises', 'Exercisess'));
+
+
+// Write a JavaScript function to uncapitalize the first character of a string.
+// const foo = str => {
+//     return str.charAt(0).toLowerCase() + str.slice(1);
+// }
+
+// console.log(foo('Js string exercises'));
+
+
+// Write a JavaScript function to Uncapitalize the first letter of each word of a string.
+// const foo = str => {
+//     let res = '';
+//     let strng = str.split(' ');
+//     for (let i = 0; i < strng.length; i++) {
+//         res += strng[i].substr(0, 1).toLowerCase() + strng[i].substr(1) + " ";
+//     }
+//     return res
+// }
+
+// console.log(foo('Js String Exercises'));
+
+// Write a JavaScript function to capitalize each word in the string
+// const foo = str => str.toUpperCase();
+// console.log(foo('js string exercises'));
+
+
+// Write a JavaScript function to test whether the character at the provided (character) index is upper case
+// const isUpperCaseAt = (str, num) => {
+//     return str.charAt(num).toUpperCase() === str.charAt(num)
+// }
+// console.log(isUpperCaseAt('Js STRING EXERCISES', 0));
+
+
+// Write a JavaScript function to test whether the character at the provided (character) index is lower case.
+// const foo = (str, num) => {
+//     return str.charAt(num).toLowerCase() === str.charAt(num)
+// }
+// console.log(foo('Js STRING EXERCISES', 1));
+
+
+// Write a JavaScript function to get humanized number with the correct suffix such as 1st, 2nd, 3rd or 4th.
+// function humanize(n) {
+//     var suf = ['th', 'st', 'nd', 'rd'];
+//     var last = String(n).substr(-1);
+//     for (var i = 0; i < suf.length; i++) {
+//         if (last < 4) return n + suf[last];
+
+//     }
+// };
+// console.log(humanize(1));
+// console.log(humanize(20));
+// console.log(humanize(302));
