@@ -155,3 +155,64 @@
 // console.log(humanize(1));
 // console.log(humanize(20));
 // console.log(humanize(302));
+
+
+// Write a JavaScript function to test whether a string starts with a specified string. Go to the editor
+// const startsWith = (str, ky) => {
+//     str = str.toLowerCase().split(" ");
+//     return str[0] == ky.toLowerCase()
+// }
+// console.log(startsWith('js string exercises', 'js'));
+
+// Write a JavaScript function to test whether a string ends with a specified string.
+// const endsWith = (str, ky) => {
+//     str = str.toLowerCase().split(" ");
+//     return str[str.length - 1] == ky.toLowerCase()
+// }
+// console.log(endsWith('js string exercises', 'exercises'));
+
+
+// Write a JavaScript function to get the successor of a string. 
+// function successor(str) {
+//     var last = str.charCodeAt(str.length - 1) + 1;
+//     var res = String.fromCharCode(last);
+//     var str = str.substring(0, str.length - 1);
+//     return str + res;
+// };
+// console.log(successor('abcd'));
+// console.log(successor('3456'));
+
+
+// Write a JavaScript program to get the length of a JavaScript object. 
+// let student = {
+//     name: "David Rayy",
+//     sclass: "VI",
+//     rollno: 12
+// };
+// let Keys = Object.keys(student);
+// let Length = Keys.length;
+// console.log(Length)
+
+
+// Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
+// function invert_key_value(obj) {
+//     let arr = Object.entries(obj);  // Generate array
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i].reverse();  /// reverse
+//     }
+//     return Object.fromEntries(arr);  //generate object
+// }
+// let obj = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
+// let rev = invert_key_value(obj);
+
+// console.log(rev);
+// console.log(obj);
+
+// Write a JavaScript function to check whether an object contains given property
+// function hasKey(obj, property) {
+//     if (obj !== null) {
+//         return obj.hasOwnProperty(property);
+//     }
+// }
+
+// console.log(hasKey({ red: "#FF0000", green: "#00FF00", white: "#FFFFFF" }, "green")); 
